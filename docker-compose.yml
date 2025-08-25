@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  web-portal:
+    build:
+      context: ./web-portal
+    image: epro-web-portal
+    ports:
+      - "3009:3000"
+    restart: unless-stopped
+
+  # Placeholder for other services that would be added later
+  # postgres:
+  # redis:
+  # mongodb:
+  # api-gateway:

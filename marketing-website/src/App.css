@@ -1,0 +1,102 @@
+/* Base styles with error handling fallbacks */
+.App {
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  min-height: 100vh;
+}
+
+/* Navigation styles */
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  margin: 10px 0;
+}
+
+nav a {
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  color: #0056b3;
+}
+
+/* Error state styles */
+.error-state {
+  background-color: #fef2f2;
+  border: 1px solid #fecaca;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin: 1rem 0;
+  color: #dc2626;
+}
+
+/* Loading state styles */
+.loading-state {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .App {
+    padding: 0 1rem;
+  }
+  
+  nav ul {
+    flex-direction: column;
+  }
+  
+  nav li {
+    margin: 5px 0;
+  }
+}
+
+/* Accessibility improvements */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Focus styles for accessibility */
+button:focus,
+a:focus {
+  outline: 2px solid #2563eb;
+  outline-offset: 2px;
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .cursor-blue {
+    color: #0000ff !important;
+  }
+  
+  .cursor-green {
+    color: #008000 !important;
+  }
+}
+
+/* Print styles */
+@media print {
+  .App {
+    text-align: left;
+  }
+  
+  nav,
+  button {
+    display: none;
+  }
+}
