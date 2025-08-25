@@ -7,3 +7,12 @@ marketing-website/src/pages/DemoPage.tsx
 marketing-website/src/pages/FeaturesPage.tsx
 marketing-website/src/pages/MainLanding.tsx
 web
+warning: in the working copy of 'marketing-website/src/App.tsx', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'marketing-website/src/pages/MainLanding.tsx', LF will be replaced by CRLF the next time Git touches it
+marketing-website/src/App.tsx
+marketing-website/src/index.css
+marketing-website/src/index.tsx
+marketing-website/src/pages/DemoPage.tsx
+marketing-website/src/pages/FeaturesPage.tsx
+marketing-website/src/pages/MainLanding.tsx
+web

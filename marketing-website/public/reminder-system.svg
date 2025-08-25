@@ -1,0 +1,32 @@
+<svg width="400" height="400" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="400" fill="#FEF3C7"/>
+  
+  <!-- Bell icon -->
+  <circle cx="200" cy="120" r="60" fill="#F59E0B"/>
+  <path d="M170 120c0-16.569 13.431-30 30-30s30 13.431 30 30v20c0 11.046 8.954 20 20 20s20-8.954 20-20v-20c0-38.66-31.34-70-70-70s-70 31.34-70 70v20c0 11.046 8.954 20 20 20s20-8.954 20-20v-20z" fill="#F59E0B"/>
+  <path d="M200 200c-11.046 0-20-8.954-20-20s8.954-20 20-20 20 8.954 20 20-8.954 20-20 20z" fill="#F59E0B"/>
+  
+  <!-- Notification dots -->
+  <circle cx="240" cy="100" r="8" fill="#EF4444"/>
+  <circle cx="260" cy="100" r="6" fill="#EF4444"/>
+  <circle cx="275" cy="100" r="4" fill="#EF4444"/>
+  
+  <!-- Reminder list -->
+  <rect x="80" y="250" width="240" height="120" rx="8" fill="white" stroke="#E5E7EB" stroke-width="2"/>
+  
+  <!-- List items -->
+  <rect x="100" y="270" width="16" height="16" rx="2" fill="#10B981"/>
+  <text x="130" y="283" fill="#374151" font-family="Arial, sans-serif" font-size="12">Study Visit - Patient Smith</text>
+  <text x="130" y="300" fill="#6B7280" font-family="Arial, sans-serif" font-size="10">Tomorrow at 2:00 PM</text>
+  
+  <rect x="100" y="310" width="16" height="16" rx="2" fill="#F59E0B"/>
+  <text x="130" y="323" fill="#374151" font-family="Arial, sans-serif" font-size="12">Follow-up Call - Dr. Johnson</text>
+  <text x="130" y="340" fill="#6B7280" font-family="Arial, sans-serif" font-size="10">Today at 5:00 PM</text>
+  
+  <!-- Floating elements -->
+  <circle cx="120" cy="180" r="6" fill="#F59E0B" opacity="0.6"/>
+  <circle cx="280" cy="160" r="8" fill="#10B981" opacity="0.6"/>
+  <circle cx="100" cy="320" r="4" fill="#EF4444" opacity="0.6"/>
+  
+  <text x="200" y="380" text-anchor="middle" fill="#1F2937" font-family="Arial, sans-serif" font-size="14" font-weight="bold">Reminder System</text>
+</svg>

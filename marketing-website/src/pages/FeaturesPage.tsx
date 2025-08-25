@@ -211,28 +211,38 @@ const FeaturesPage: React.FC = () => {
                     <p className="text-lg text-gray-600 mb-6">
                       Auto-schedule visits and never miss a reminder.
                     </p>
-                    <div className="space-y-4">
-                      <div className="flex items-start">
-                        <div className="w-2 h-2 bg-cursor-green rounded-full mt-2 mr-3"></div>
-                        <p className="text-gray-700">When you enroll a subject, Cursor creates their entire visit schedule with allowed date windows</p>
-                      </div>
-                      <div className="flex items-start">
-                        <div className="w-2 h-2 bg-cursor-green rounded-full mt-2 mr-3"></div>
-                        <p className="text-gray-700">You'll get notified if a visit window is approaching its end</p>
-                      </div>
-                      <div className="flex items-start">
-                        <div className="w-2 h-2 bg-cursor-green rounded-full mt-2 mr-3"></div>
-                        <p className="text-gray-700">System sends SMS/email reminders to subjects before each visit</p>
-                      </div>
-                      <div className="flex items-start">
-                        <div className="w-2 h-2 bg-cursor-green rounded-full mt-2 mr-3"></div>
-                        <p className="text-gray-700">Alerts you if they confirm or need to reschedule</p>
-                      </div>
-                      <div className="flex items-start">
-                        <div className="w-2 h-2 bg-cursor-green rounded-full mt-2 mr-3"></div>
-                        <p className="text-gray-700">Reduces no-shows and keeps visits on track</p>
-                      </div>
-                    </div>
+                                         <ul className="mt-6 space-y-3 text-left">
+                       <li className="flex items-start gap-3">
+                         <span className="mt-2 h-2 w-2 flex-none rounded-full bg-emerald-500" />
+                         <span className="flex-1">
+                           When you enroll a subject, <strong>SiteAI</strong> creates their entire visit schedule with allowed date windows
+                         </span>
+                       </li>
+                       <li className="flex items-start gap-3">
+                         <span className="mt-2 h-2 w-2 flex-none rounded-full bg-emerald-500" />
+                         <span className="flex-1">
+                           You'll get notified if a visit window is approaching its end
+                         </span>
+                       </li>
+                       <li className="flex items-start gap-3">
+                         <span className="mt-2 h-2 w-2 flex-none rounded-full bg-emerald-500" />
+                         <span className="flex-1">
+                           System sends SMS/email reminders to subjects before each visit
+                         </span>
+                       </li>
+                       <li className="flex items-start gap-3">
+                         <span className="mt-2 h-2 w-2 flex-none rounded-full bg-emerald-500" />
+                         <span className="flex-1">
+                           Alerts you if they confirm or need to reschedule
+                         </span>
+                       </li>
+                       <li className="flex items-start gap-3">
+                         <span className="mt-2 h-2 w-2 flex-none rounded-full bg-emerald-500" />
+                         <span className="flex-1">
+                           Reduces no-shows and keeps visits on track
+                         </span>
+                       </li>
+                     </ul>
                   </div>
                   <div className="lg:order-1 bg-gray-100 rounded-lg p-8 text-center">
                     <div className="text-gray-500 text-sm mb-2">Reminder System</div>
@@ -341,28 +351,20 @@ const FeaturesPage: React.FC = () => {
                     <p className="text-lg text-gray-600 mb-6">
                       Proactive alerts prevent last-minute scrambles.
                     </p>
-                    <div className="space-y-4">
-                      <div className="flex items-start">
-                        <div className="w-2 h-2 bg-cursor-green rounded-full mt-2 mr-3"></div>
-                        <p className="text-gray-700">7 days before a visit, Cursor prompts you to ensure lab kits and supplies are ready</p>
-                      </div>
-                      <div className="flex items-start">
-                        <div className="w-2 h-2 bg-cursor-green rounded-full mt-2 mr-3"></div>
-                        <p className="text-gray-700">1 day before, it reminds you to prepare the room and equipment</p>
-                      </div>
-                      <div className="flex items-start">
-                        <div className="w-2 h-2 bg-cursor-green rounded-full mt-2 mr-3"></div>
-                        <p className="text-gray-700">Automatic prompts for daily tasks like temperature logs</p>
-                      </div>
-                      <div className="flex items-start">
-                        <div className="w-2 h-2 bg-cursor-green rounded-full mt-2 mr-3"></div>
-                        <p className="text-gray-700">IP accountability checks and other routine tasks</p>
-                      </div>
-                      <div className="flex items-start">
-                        <div className="w-2 h-2 bg-cursor-green rounded-full mt-2 mr-3"></div>
-                        <p className="text-gray-700">These proactive alerts prevent last-minute scrambles</p>
-                      </div>
-                    </div>
+                                         <ul className="mt-6 space-y-3 text-left features-list">
+                       {[
+                         "7 days before a visit, SiteAI prompts you to ensure lab kits and supplies are ready",
+                         "1 day before, it reminds you to prepare the room and equipment",
+                         "Automatic prompts for daily tasks like temperature logs",
+                         "IP accountability checks and other routine tasks",
+                         "These proactive alerts prevent last-minute scrambles",
+                       ].map((text) => (
+                         <li key={text} className="flex items-start gap-3">
+                           <span className="mt-2 h-2 w-2 flex-none rounded-full bg-emerald-500" />
+                           <span className="flex-1 text-gray-700">{text}</span>
+                         </li>
+                       ))}
+                     </ul>
                   </div>
                   <div className="lg:order-1 bg-gray-100 rounded-lg p-8 text-center">
                     <div className="text-gray-500 text-sm mb-2">Task Prompts</div>
@@ -399,32 +401,21 @@ const FeaturesPage: React.FC = () => {
                     <p className="text-lg text-gray-600 mb-6">
                       Streamline financial tracking for your site.
                     </p>
-                    <div className="space-y-4">
-                      <div className="flex items-start">
-                        <div className="w-2 h-2 bg-cursor-green rounded-full mt-2 mr-3"></div>
-                        <p className="text-gray-700">After a visit is completed, system prompts coordinator to request visit payments</p>
-                      </div>
-                      <div className="flex items-start">
-                        <div className="w-2 h-2 bg-cursor-green rounded-full mt-2 mr-3"></div>
-                        <p className="text-gray-700">Whether it's invoicing the sponsor/CRO or issuing participant stipends</p>
-                      </div>
-                      <div className="flex items-start">
-                        <div className="w-2 h-2 bg-cursor-green rounded-full mt-2 mr-3"></div>
-                        <p className="text-gray-700">Once you mark a visit complete, Cursor reminds you to send stipend to participant</p>
-                      </div>
-                      <div className="flex items-start">
-                        <div className="w-2 h-2 bg-cursor-green rounded-full mt-2 mr-3"></div>
-                        <p className="text-gray-700">Or to log the visit for sponsor billing</p>
-                      </div>
-                      <div className="flex items-start">
-                        <div className="w-2 h-2 bg-cursor-green rounded-full mt-2 mr-3"></div>
-                        <p className="text-gray-700">Ensuring no visit payment is overlooked</p>
-                      </div>
-                      <div className="flex items-start">
-                        <div className="w-2 h-2 bg-cursor-green rounded-full mt-2 mr-3"></div>
-                        <p className="text-gray-700">This is a unique value-add that streamlines financial tracking for the site</p>
-                      </div>
-                    </div>
+                                         <ul className="mt-6 space-y-3 text-left features-list">
+                       {[
+                         "After a visit is completed, system prompts coordinator to request visit payments",
+                         "Whether it's invoicing the sponsor/CRO or issuing participant stipends",
+                         "Once you mark a visit complete, SiteAI reminds you to send stipend to participant",
+                         "Or to log the visit for sponsor billing",
+                         "Ensuring no visit payment is overlooked",
+                         "This is a unique value-add that streamlines financial tracking for the site",
+                       ].map((text) => (
+                         <li key={text} className="flex items-start gap-3">
+                           <span className="mt-2 h-2 w-2 flex-none rounded-full bg-emerald-500" />
+                           <span className="flex-1 text-gray-700">{text}</span>
+                         </li>
+                       ))}
+                     </ul>
                   </div>
                   <div className="bg-gray-100 rounded-lg p-8 text-center">
                     <div className="text-gray-500 text-sm mb-2">Payment Triggers</div>
@@ -442,11 +433,52 @@ const FeaturesPage: React.FC = () => {
                         <div className="text-sm text-gray-600">Stipend processed successfully</div>
                       </div>
                     </div>
-                  </div>
-                </div>
-              </div>
-
-              {/* Compliance & Audit Trail */}
+                                 </div>
+             </div>
+           </div>
+ 
+           {/* Automatic Document Recognition & Filing */}
+           <section id="automatic-document-filing" className="py-14">
+             <div className="mx-auto max-w-4xl px-6">
+               {/* Heading */}
+               <div className="flex items-center gap-3">
+                 <span className="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-indigo-100 text-indigo-700">
+                   {/* simple document/magic icon */}
+                   <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                     <path d="M7 2h7l5 5v13a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2zm7 1v5h5" />
+                     <path d="M9 13h6M9 17h6M9 9h3" />
+                   </svg>
+                 </span>
+                 <h2 className="text-3xl font-bold tracking-tight">
+                   Automatic Document Recognition &amp; Filing
+                 </h2>
+               </div>
+ 
+               {/* Subhead */}
+               <p className="mt-3 text-center text-gray-600">
+                 Email or snap a photo—SiteAI classifies, files, and logs it for you.
+               </p>
+ 
+               {/* Bullets (left-aligned, no links) */}
+               <ul className="mt-6 space-y-3 text-left">
+                 {[
+                   "Email a document from your registered address; SiteAI knows it's you and routes it automatically.",
+                   "OCR + entity extraction categorizes by study, subject, visit, and document type—then files it in the correct folder.",
+                   "De-duplication and versioning to prevent repeats while keeping changes auditable.",
+                   "Take a picture of a freezer/fridge display; SiteAI parses the temperature and appends a tamper-evident log entry.",
+                   "Audit-ready timestamps and user attribution; exportable temperature logs (PDF/CSV).",
+                   "Supports PDF, DOCX, JPG/PNG. PHI handled securely in line with HIPAA controls.",
+                 ].map((text) => (
+                   <li key={text} className="flex items-start gap-3">
+                     <span className="mt-2 h-2 w-2 flex-none rounded-full bg-emerald-500" />
+                     <span className="flex-1 text-gray-700">{text}</span>
+                   </li>
+                 ))}
+               </ul>
+             </div>
+           </section>
+ 
+           {/* Compliance & Audit Trail */}
               <div className="mb-20">
                 <div className="grid lg:grid-cols-2 gap-12 items-center">
                   <div className="lg:order-2">
@@ -464,7 +496,7 @@ const FeaturesPage: React.FC = () => {
                     <div className="space-y-4">
                       <div className="flex items-start">
                         <div className="w-2 h-2 bg-cursor-green rounded-full mt-2 mr-3"></div>
-                        <p className="text-gray-700">Every action in Cursor is part of an immutable audit trail</p>
+                                                 <p className="text-gray-700">Every action in SiteAI is part of an immutable audit trail</p>
                       </div>
                       <div className="flex items-start">
                         <div className="w-2 h-2 bg-cursor-green rounded-full mt-2 mr-3"></div>
@@ -476,7 +508,7 @@ const FeaturesPage: React.FC = () => {
                       </div>
                       <div className="flex items-start">
                         <div className="w-2 h-2 bg-cursor-green rounded-full mt-2 mr-3"></div>
-                        <p className="text-gray-700">Cursor provides a full audit log and 21 CFR Part 11 compliant e-signatures</p>
+                                                 <p className="text-gray-700">SiteAI provides a full audit log and 21 CFR Part 11 compliant e-signatures</p>
                       </div>
                       <div className="flex items-start">
                         <div className="w-2 h-2 bg-cursor-green rounded-full mt-2 mr-3"></div>
@@ -534,36 +566,25 @@ const FeaturesPage: React.FC = () => {
                                <p className="text-xl text-gray-300 mb-8 max-w-3xl mx-auto">
                    See how SiteAI's comprehensive features can streamline your clinical research operations and boost your team's efficiency.
                  </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <button 
-                  className="bg-cursor-blue text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-700 transition-colors"
-                  onClick={() => {
-                    try {
-                      debugLog('Features page - Get Demo button clicked');
-                      alert('Demo request functionality coming soon!');
-                    } catch (error) {
-                      debugError('Features demo button click error', error);
-                      alert('Sorry, there was an error. Please try again.');
-                    }
-                  }}
-                >
-                  Get Your Free Demo
-                </button>
-                <button 
-                  className="border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white hover:text-gray-900 transition-colors"
-                  onClick={() => {
-                    try {
-                      debugLog('Features page - Start Free Trial button clicked');
-                      alert('Free trial functionality coming soon!');
-                    } catch (error) {
-                      debugError('Features trial button click error', error);
-                      alert('Sorry, there was an error. Please try again.');
-                    }
-                  }}
-                >
-                  Start Free Trial
-                </button>
-              </div>
+                             <div className="mt-8 flex flex-wrap justify-center gap-4">
+                 {/* Demo */}
+                 <Link
+                   to="/demo"
+                   aria-label="Go to Demo"
+                   className="inline-flex items-center justify-center rounded-xl bg-white/95 px-6 py-3 font-semibold text-blue-700 shadow hover:bg-white"
+                 >
+                   Get Your Free Demo
+                 </Link>
+
+                 {/* Sign up (open Sign Up tab) */}
+                 <Link
+                   to="/auth#signup"
+                   aria-label="Start Free Trial"
+                   className="inline-flex items-center justify-center rounded-xl border border-white/70 bg-transparent px-6 py-3 font-semibold text-white hover:bg-white/10"
+                 >
+                   Start Free Trial
+                 </Link>
+               </div>
             </div>
           </section>
 

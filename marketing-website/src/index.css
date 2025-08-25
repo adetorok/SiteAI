@@ -2,6 +2,61 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Custom floating animation for hero carousel */
+@keyframes floatY {
+  0%,100% { transform: translateY(0) }
+  50%     { transform: translateY(-8px) }
+}
+
+.animate-float {
+  animation: floatY 6s ease-in-out infinite;
+}
+
+/* Custom cursor colors */
+:root {
+  --cursor-blue: #2563eb;
+  --cursor-green: #10b981;
+  --cursor-gray: #6b7280;
+  --cursor-light-gray: #f9fafb;
+}
+
+.bg-cursor-blue {
+  background-color: var(--cursor-blue);
+}
+
+.text-cursor-blue {
+  color: var(--cursor-blue);
+}
+
+.bg-cursor-green {
+  background-color: var(--cursor-green);
+}
+
+.text-cursor-green {
+  color: var(--cursor-green);
+}
+
+.bg-cursor-gray {
+  background-color: var(--cursor-gray);
+}
+
+.text-cursor-gray {
+  color: var(--cursor-gray);
+}
+
+.bg-cursor-light-gray {
+  background-color: var(--cursor-light-gray);
+}
+
+/* CTA glow */
+.btn-glow { box-shadow: 0 10px 25px rgba(37, 99, 235, .35); }
+.btn-glow:hover { box-shadow: 0 14px 30px rgba(37, 99, 235, .45); }
+
+/* Features list alignment safety net */
+.features-list li, .features-list li * { 
+  text-align: left !important; 
+}
+
 /* Custom base styles */
 body {
   margin: 0;
