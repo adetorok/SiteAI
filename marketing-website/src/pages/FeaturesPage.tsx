@@ -93,7 +93,7 @@ const FeaturesPage: React.FC = () => {
               <div className="flex justify-between items-center h-16">
                 <div className="flex items-center">
                   <Link to="/" className="text-2xl font-bold text-cursor-blue">
-                    Cursor
+                    SiteAI
                   </Link>
                 </div>
                 <div className="hidden md:flex space-x-8">
@@ -106,9 +106,9 @@ const FeaturesPage: React.FC = () => {
                   <Link to="/demo" className="text-gray-600 hover:text-cursor-blue transition-colors">
                     Demo
                   </Link>
-                  <Link to="/login" className="text-gray-600 hover:text-cursor-blue transition-colors">
-                    Login
-                  </Link>
+                                     <Link to="/auth" className="text-gray-600 hover:text-cursor-blue transition-colors">
+                     Login / Sign Up
+                   </Link>
                 </div>
                 <div className="md:hidden">
                   <button className="text-gray-600 hover:text-cursor-blue">
@@ -125,7 +125,7 @@ const FeaturesPage: React.FC = () => {
           <section className="bg-gradient-to-r from-cursor-blue to-blue-700 text-white py-20">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
               <h1 className="text-4xl md:text-5xl font-bold mb-6">
-                How Cursor Helps You
+                How SiteAI Helps You
               </h1>
               <p className="text-xl md:text-2xl text-blue-100 max-w-3xl mx-auto">
                 Discover the powerful features that transform clinical research site management from chaos to clarity
@@ -531,9 +531,9 @@ const FeaturesPage: React.FC = () => {
               <h2 className="text-3xl md:text-4xl font-bold mb-6">
                 Ready to Transform Your Site Management?
               </h2>
-              <p className="text-xl text-gray-300 mb-8 max-w-3xl mx-auto">
-                See how Cursor's comprehensive features can streamline your clinical research operations and boost your team's efficiency.
-              </p>
+                               <p className="text-xl text-gray-300 mb-8 max-w-3xl mx-auto">
+                   See how SiteAI's comprehensive features can streamline your clinical research operations and boost your team's efficiency.
+                 </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <button 
                   className="bg-cursor-blue text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-700 transition-colors"
@@ -572,7 +572,7 @@ const FeaturesPage: React.FC = () => {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="grid md:grid-cols-4 gap-8">
                 <div>
-                  <h3 className="text-xl font-bold text-cursor-blue mb-4">Cursor</h3>
+                                     <h3 className="text-xl font-bold text-cursor-blue mb-4">SiteAI</h3>
                   <p className="text-gray-300">
                     Transforming clinical research site management with intelligent, compliant technology.
                   </p>
@@ -603,7 +603,7 @@ const FeaturesPage: React.FC = () => {
                 </div>
               </div>
               <div className="border-t border-gray-700 mt-8 pt-8 text-center text-gray-300">
-                <p>&copy; 2024 Cursor. All rights reserved.</p>
+                                 <p>&copy; 2024 SiteAI. All rights reserved.</p>
               </div>
             </div>
           </footer>

@@ -270,7 +270,7 @@ const DemoPage: React.FC = () => {
               <div className="flex justify-between items-center h-16">
                 <div className="flex items-center">
                   <Link to="/" className="text-2xl font-bold text-cursor-blue">
-                    Cursor
+                    SiteAI
                   </Link>
                 </div>
                 <div className="hidden md:flex space-x-8">
@@ -283,9 +283,9 @@ const DemoPage: React.FC = () => {
                   <Link to="/demo" className="text-cursor-blue font-medium">
                     Demo
                   </Link>
-                  <Link to="/login" className="text-gray-600 hover:text-cursor-blue transition-colors">
-                    Login
-                  </Link>
+                                     <Link to="/auth" className="text-gray-600 hover:text-cursor-blue transition-colors">
+                     Login / Sign Up
+                   </Link>
                 </div>
                 <div className="md:hidden">
                   <button className="text-gray-600 hover:text-cursor-blue">
@@ -301,12 +301,12 @@ const DemoPage: React.FC = () => {
           {/* Hero Section */}
           <section className="bg-gradient-to-r from-cursor-blue to-blue-700 text-white py-20">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-              <h1 className="text-4xl md:text-5xl font-bold mb-6">
-                Get Started with Cursor
-              </h1>
-              <p className="text-xl md:text-2xl text-blue-100 max-w-3xl mx-auto">
-                Experience Cursor first-hand. See how you can simplify your study operations.
-              </p>
+                             <h1 className="text-4xl md:text-5xl font-bold mb-6">
+                 Get Started with SiteAI
+               </h1>
+               <p className="text-xl md:text-2xl text-blue-100 max-w-3xl mx-auto">
+                 Experience SiteAI first-hand. See how you can simplify your study operations.
+               </p>
             </div>
           </section>
 
@@ -317,14 +317,14 @@ const DemoPage: React.FC = () => {
                 
                 {/* Left Column - Content */}
                 <div>
-                  <h2 className="text-3xl font-bold text-gray-900 mb-6">
-                    See Cursor in Action
-                  </h2>
-                  
-                  <div className="space-y-6 text-gray-600">
-                    <p className="text-lg">
-                      In a 30-minute demo, see how Cursor's calendar and visit planner can save you hours each week.
-                    </p>
+                                     <h2 className="text-3xl font-bold text-gray-900 mb-6">
+                     See SiteAI in Action
+                   </h2>
+                   
+                   <div className="space-y-6 text-gray-600">
+                     <p className="text-lg">
+                       In a 30-minute demo, see how SiteAI's calendar and visit planner can save you hours each week.
+                     </p>
                     
                     <div className="space-y-4">
                       <h3 className="text-xl font-semibold text-gray-900">What You'll See:</h3>
@@ -593,9 +593,9 @@ const DemoPage: React.FC = () => {
                       )}
                     </button>
 
-                    <p className="text-xs text-gray-500 text-center">
-                      By submitting this form, you agree to receive communications from Cursor about our products and services.
-                    </p>
+                                         <p className="text-xs text-gray-500 text-center">
+                       By submitting this form, you agree to receive communications from SiteAI about our products and services.
+                     </p>
                   </form>
                 </div>
               </div>
@@ -608,9 +608,9 @@ const DemoPage: React.FC = () => {
               <h2 className="text-3xl md:text-4xl font-bold mb-6">
                 Ready to Transform Your Site Management?
               </h2>
-              <p className="text-xl text-gray-300 mb-8 max-w-3xl mx-auto">
-                Join the growing number of clinical research sites that trust Cursor to streamline their operations.
-              </p>
+                               <p className="text-xl text-gray-300 mb-8 max-w-3xl mx-auto">
+                   Join the growing number of clinical research sites that trust SiteAI to streamline their operations.
+                 </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <button 
                   className="bg-cursor-blue text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-700 transition-colors"
@@ -640,7 +640,7 @@ const DemoPage: React.FC = () => {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="grid md:grid-cols-4 gap-8">
                 <div>
-                  <h3 className="text-xl font-bold text-cursor-blue mb-4">Cursor</h3>
+                                     <h3 className="text-xl font-bold text-cursor-blue mb-4">SiteAI</h3>
                   <p className="text-gray-300">
                     Transforming clinical research site management with intelligent, compliant technology.
                   </p>
@@ -671,7 +671,7 @@ const DemoPage: React.FC = () => {
                 </div>
               </div>
               <div className="border-t border-gray-700 mt-8 pt-8 text-center text-gray-300">
-                <p>&copy; 2024 Cursor. All rights reserved.</p>
+                                 <p>&copy; 2024 SiteAI. All rights reserved.</p>
               </div>
             </div>
           </footer>

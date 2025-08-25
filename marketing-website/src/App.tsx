@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import ErrorBoundary from './components/ErrorBoundary';
 import MainLanding from './pages/MainLanding';
 import SmokeTest from './components/SmokeTest';
@@ -7,38 +7,8 @@ import { debugLog, debugError } from './utils/debug';
 import './App.css';
 
 import FeaturesPage from './pages/FeaturesPage';
-
-const DemoPage: React.FC = () => {
-  try {
-    debugLog('DemoPage component rendered');
-    return (
-      <div style={{ padding: 24 }}>
-        <h1>Get Started with Cursor</h1>
-        <p>Demo and trial signup coming soon...</p>
-        <Link to="/">← Back to Home</Link>
-      </div>
-    );
-  } catch (error) {
-    debugError('DemoPage render error', error);
-    return <div>Error loading demo page</div>;
-  }
-};
-
-const LoginPage: React.FC = () => {
-  try {
-    debugLog('LoginPage component rendered');
-    return (
-      <div style={{ padding: 24 }}>
-        <h1>Login to Cursor</h1>
-        <p>Login functionality coming soon...</p>
-        <Link to="/">← Back to Home</Link>
-      </div>
-    );
-  } catch (error) {
-    debugError('LoginPage render error', error);
-    return <div>Error loading login page</div>;
-  }
-};
+import DemoPage from './pages/DemoPage';
+import AuthPage from './pages/AuthPage';
 
 const App: React.FC = () => {
   try {
@@ -52,7 +22,7 @@ const App: React.FC = () => {
               <Route path="/" element={<MainLanding />} />
               <Route path="/features" element={<FeaturesPage />} />
               <Route path="/demo" element={<DemoPage />} />
-              <Route path="/login" element={<LoginPage />} />
+                                    <Route path="/auth" element={<AuthPage />} />
             </Routes>
             {process.env.NODE_ENV === 'development' && <SmokeTest />}
           </div>

@@ -58,3 +58,27 @@ button {
   -ms-user-select: none;
   user-select: none;
 }
+
+/* Collapsible compliance section animations */
+.collapsible {
+  overflow: hidden;
+  transition: max-height 400ms ease, opacity 300ms ease;
+}
+
+.collapsible-closed { 
+  max-height: 0; 
+  opacity: 0; 
+}
+
+.collapsible-open { 
+  max-height: 1200px; 
+  opacity: 1; 
+}
+
+.chevron {
+  transition: transform 200ms ease;
+}
+
+.chevron-rotated {
+  transform: rotate(180deg);
+}
